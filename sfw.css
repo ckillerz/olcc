@@ -436,12 +436,13 @@ td.cinfo {
   position: fixed;
   right: 18px;
   bottom: 25px;
+  height: 70%;
   background-color: #EAE8E4;
   border: 2px solid #6D6D6D;
   z-index: 99;
 }
 #totoz-list {
-  max-height: 500px;
+  height: 95%;
   max-width: 500px;
   overflow: auto;
 }
