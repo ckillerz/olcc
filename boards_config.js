@@ -54,13 +54,14 @@ finss.color = '#d0ffd0';
 finss.slip = SLIP_TAGS_RAW;
 GlobalBoards['finss'] = finss;
 
-var shoop = new Board('shoop', false);
-shoop.getUrl = 'http://dax.sveetch.net/tribune/remote.xml'; // ?last=%i inopérant pour le moment
-shoop.postUrl = 'http://dax.sveetch.net/tribune/post.xml';
-shoop.postData = "content=%m";
-shoop.alias = "sveetch,dax";
-shoop.color = '#EDEDDB';
-GlobalBoards['shoop'] = shoop;
+var sveetch = new Board('sveetch', false);
+sveetch.getUrl = 'http://www.sveetch.net/tribune/remote/xml/'; // ?last=%i inopérant pour le moment
+sveetch.postUrl = 'http://www.sveetch.net/tribune/post/xml/';
+sveetch.postData = "content=%m";
+sveetch.slip = SLIP_TAGS_RAW;
+sveetch.alias = "shoop,dax";
+sveetch.color = '#EDEDDB';
+GlobalBoards['sveetch'] = sveetch;
 
 var tif = new Board('tifauv', false);
 tif.getUrl = 'http://tribune.tifauv.homeip.net/tribune/remote?last=%i';
