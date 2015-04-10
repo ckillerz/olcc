@@ -122,3 +122,16 @@ gabu.postUrl = 'http://gabuzomeu.fr/tribune/post';
 gabu.color = '#aaffbb';
 gabu.slip = SLIP_TAGS_RAW;
 GlobalBoards['gabuzomeu'] = gabu;
+
+var devnewton = new Board('devnewton', false);
+devnewton.getUrl = 'http://b3.bci.im/legacy/xml';
+devnewton.postUrl = 'http://b3.bci.im/legacy/post';
+devnewton.color = '#F5D6CC';
+GlobalBoards['devnewton'] = devnewton;
+
+var devnewton_up = new Board('devnewton_up', false);
+devnewton_up.getUrl = 'http://b3.bci.im/legacy/xml?room=up';
+devnewton_up.postUrl = 'http://b3.bci.im/legacy/post';
+devnewton_up.color = '#F5D6CC';
+devnewton_up.postData = "room=up&message=%m";
+GlobalBoards['devnewton_up'] = devnewton_up;
