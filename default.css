@@ -607,6 +607,7 @@ td.cinfo {
   border: 1px solid gray;
   background-color: #efefef;
   z-index: 99;
+  height: 70%;
 }
 #totoz-list {
   max-height: 500px;
