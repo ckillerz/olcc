@@ -587,13 +587,11 @@ function sound_play(sound) {
     }
 }
 function sound_queue() {
-    if (GlobalSoundQueue.length == 0) return;
-    // alert(GlobalSoundQueue);
-    var flash = document.getElementById("myFlash");
-    flash.SetVariable("method:setVolume", ""+settings.value('sound_volume'));
-    flash.SetVariable("method:setUrl", GlobalSoundQueue.shift());
-    flash.SetVariable("method:play", "");
-    flash.SetVariable("enabled", "true");
+    if (GlobalSoundQueue.length > 0) {
+      var sound = new Audio(GlobalSoundQueue.shift());
+      sound.volume = settings.value('sound_volume');
+      sound.play();
+    }
 }
 function sound_stop() {
     document.getElementById("myFlash").SetVariable("method:stop", "");
