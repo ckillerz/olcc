@@ -38,6 +38,7 @@ var moules = new Board('moules', false);
 moules.getUrl = 'http://moules.org/board/backend';
 moules.postUrl = 'http://moules.org/board/add';
 moules.color = '#ffe3c9';
+moules.slip = SLIP_TAGS_RAW;
 GlobalBoards['moules'] = moules;
 
 var bouchot = new Board('bouchot', false);
